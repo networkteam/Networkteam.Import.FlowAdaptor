@@ -1,0 +1,19 @@
+{
+    "description": "Flow adaptor for networkteam import framework",
+    "type": "neos-package",
+    "name": "networkteam/import-flowadaptor",
+    "require": {
+        "neos/flow": ">= 3.2",
+        "networkteam/import": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Networkteam\\Import\\FlowAdaptor": "Classes"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Networkteam.Import.FlowAdaptor"
+        }
+    }
+}

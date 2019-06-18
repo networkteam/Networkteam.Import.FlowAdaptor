@@ -1,0 +1,9 @@
+Networkteam:
+  Import:
+    FlowAdaptor:
+      importLogger:
+        backend: [TYPO3\Flow\Log\Backend\AnsiConsoleBackend]
+        backendOptions:
+          -
+            severityThreshold: '%LOG_DEBUG%'
+            logMessageOrigin: FALSE

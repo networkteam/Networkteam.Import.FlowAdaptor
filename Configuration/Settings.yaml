@@ -1,0 +1,19 @@
+Networkteam:
+  Import:
+    FlowAdaptor:
+      exampleCsvImporter:
+#        csvDataProvider:
+#          options:
+#            "csv.filename": '%FLOW_PATH_PACKAGES%Application/Networkteam.Import.FlowAdaptor/Tests/Functional/Fixtures/store_data.csv'
+#            "csv.delimiter": ","
+#            "csv.enclosure": '"'
+
+        transformer:
+          mapping:
+            id: 'Interner Identifizierungscode'
+            title: 'Company'
+            address: '${row["Street2"] ? (row["Street1"]~"\n"~row["Street2"]) : row["Street1"]}'
+            zip: 'Zip'
+            city: 'City'
+            country: 'Country'
+            phone: 'Tel'

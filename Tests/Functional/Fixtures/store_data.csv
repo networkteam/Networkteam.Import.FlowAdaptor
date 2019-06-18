@@ -1,0 +1,4 @@
+Interner Identifizierungscode,CustomerID,Company,Street1,Street2,Zip,City,Country,ISO,Tel,Email,Website,Lat,Long,
+1234,123456,"Quisque Purus Sapien Corporation",440-7618 Morbi Rd.,,OA05 7VG,Placanica,Ägypten,EG,07624 270362,sit.amet@Nuncullamcorpervelit.edu,,,
+2345,234567,"Mattis Ltd",697-383 Luctus Ave,,73660,Perth,Austrailia,AU,07366 972515,tristique.pellentesque.tellus@erat.co.uk,7.76753,83.15392
+3456,345678,"Mauris Ut LLP",440-7618 Morbi Rd.,,OA05 7VG,Seattle,USA,US,0500 381860,sem.molestie.sodales@nonantebibendum.net,-19.38647, -45.82488
