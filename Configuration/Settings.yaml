@@ -2,7 +2,7 @@ Neos:
   Flow:
     log:
       importFlowAdaptorLogger:
-        logger: Neos\Flow\Log\Logger
+        logger: Psr\Log\LoggerInterface
         backend: Neos\Flow\Log\Backend\FileBackend
         backendOptions:
           logFileURL: '%FLOW_PATH_DATA%Logs/ImportFLowAdaptor.log'
@@ -11,23 +11,3 @@ Neos:
           maximumLogFileSize: 10485760
           logFilesToKeep: 1
           logMessageOrigin: false
-
-Networkteam:
-  Import:
-    FlowAdaptor:
-      exampleCsvImporter:
-#        csvDataProvider:
-#          options:
-#            "csv.filename": '%FLOW_PATH_PACKAGES%Application/Networkteam.Import.FlowAdaptor/Tests/Functional/Fixtures/store_data.csv'
-#            "csv.delimiter": ","
-#            "csv.enclosure": '"'
-
-        transformer:
-          mapping:
-            id: 'Interner Identifizierungscode'
-            title: 'Company'
-            address: '${row["Street2"] ? (row["Street1"]~"\n"~row["Street2"]) : row["Street1"]}'
-            zip: 'Zip'
-            city: 'City'
-            country: 'Country'
-            phone: 'Tel'
