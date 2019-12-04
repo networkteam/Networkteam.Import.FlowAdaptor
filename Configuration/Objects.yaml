@@ -1,15 +1,11 @@
 Networkteam\Import\FlowAdaptor\Log\ImportLoggerInterface:
   scope: singleton
-  factoryObjectName: TYPO3\Flow\Log\LoggerFactory
+  factoryObjectName: Neos\Flow\Log\PsrLoggerFactoryInterface
+  factoryMethodName: get
   arguments:
     1:
-      value: 'Networkteam_Import_FlowAdaptor'
-    2:
-      value: 'TYPO3\Flow\Log\Logger'
-    3:
-      setting: Networkteam.Import.FlowAdaptor.importLogger.backend
-    4:
-      setting: Networkteam.Import.FlowAdaptor.importLogger.backendOptions
+      value: importFlowAdaptorLogger
+
 
 
 Networkteam\Import\FlowAdaptor\ExampleCsvImporter:
