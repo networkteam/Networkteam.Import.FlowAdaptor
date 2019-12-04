@@ -2,6 +2,9 @@
     "description": "Flow adaptor for networkteam import framework",
     "type": "neos-package",
     "name": "networkteam/import-flowadaptor",
+    "license": [
+        "GPL-3.0-or-later"
+    ],
     "require": {
         "neos/flow": ">= 5.3",
         "networkteam/import": "*"
