@@ -3,7 +3,7 @@
     "type": "neos-package",
     "name": "networkteam/import-flowadaptor",
     "require": {
-        "neos/flow": ">= 3.2",
+        "neos/flow": ">= 5.3",
         "networkteam/import": "*"
     },
     "autoload": {
