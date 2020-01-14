@@ -2,12 +2,10 @@
     "description": "Flow adaptor for networkteam import framework",
     "type": "neos-package",
     "name": "networkteam/import-flowadaptor",
-    "license": [
-        "GPL-3.0-or-later"
-    ],
+    "license": "MIT",
     "require": {
-        "neos/flow": ">= 5.3",
-        "networkteam/import": "*"
+        "php": "^7.1",
+        "networkteam/import": ">=2.0.0-alpha"
     },
     "autoload": {
         "psr-4": {
