@@ -2,7 +2,7 @@ Networkteam:
   Import:
     FlowAdaptor:
       importLogger:
-        backend: [TYPO3\Flow\Log\Backend\FileBackend, TYPO3\Flow\Log\Backend\AnsiConsoleBackend]
+        backend: [Neos\Flow\Log\Backend\FileBackend, Neos\Flow\Log\Backend\AnsiConsoleBackend]
         backendOptions:
           -
             logFileURL: '%FLOW_PATH_DATA%Logs/Networkteam_Import_FlowAdaptor.log'
