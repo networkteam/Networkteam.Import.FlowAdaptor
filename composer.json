@@ -4,7 +4,7 @@
     "name": "networkteam/import-flowadaptor",
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.2  || ^8.0",
         "networkteam/import": "~2.2",
         "neos/flow": "~6.0 || ~7.0"
     },
