@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "networkteam/import": ">=2.0.0-alpha",
+        "networkteam/import": "~2.2",
         "neos/flow": "~6.0 || ~7.0"
     },
     "autoload": {
