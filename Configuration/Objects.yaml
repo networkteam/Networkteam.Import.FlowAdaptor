@@ -5,21 +5,3 @@ Networkteam\Import\FlowAdaptor\Log\ImportLoggerInterface:
   arguments:
     1:
       value: importFlowAdaptorLogger
-
-
-
-Networkteam\Import\FlowAdaptor\ExampleCsvImporter:
-  scope: singleton
-  arguments:
-    1:
-      object:
-        name: 'Networkteam\Import\FlowAdaptor\DataProvider\TransformingProviderDecorator'
-        arguments:
-          1:
-            object:
-              name: 'Networkteam\Import\FlowAdaptor\DataProvider\CsvDataProvider'
-              arguments:
-                1:
-                  setting: Networkteam.Import.FlowAdaptor.ExampleCsvImporter.csvDataProvider.options
-          2:
-            setting: Networkteam.Import.FlowAdaptor.ExampleCsvImporter.transformer.mapping

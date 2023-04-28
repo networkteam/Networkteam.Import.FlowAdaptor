@@ -1,13 +1,15 @@
 Neos:
   Flow:
     log:
-      importFlowAdaptorLogger:
-        logger: Psr\Log\LoggerInterface
-        backend: Neos\Flow\Log\Backend\FileBackend
-        backendOptions:
-          logFileURL: '%FLOW_PATH_DATA%Logs/ImportFLowAdaptor.log'
-          createParentDirectories: true
-          severityThreshold: '%LOG_INFO%'
-          maximumLogFileSize: 10485760
-          logFilesToKeep: 1
-          logMessageOrigin: false
+      psr3:
+        'Neos\Flow\Log\PsrLoggerFactory':
+          importFlowAdaptorLogger:
+            default:
+              class: Neos\Flow\Log\Backend\FileBackend
+              options:
+                logFileURL: '%FLOW_PATH_DATA%Logs/ImportFLowAdaptor.log'
+                createParentDirectories: true
+                severityThreshold: '%LOG_INFO%'
+                maximumLogFileSize: 10485760
+                logFilesToKeep: 1
+                logMessageOrigin: false
